@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Doações de Alimentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#donors">Doadores</a></li>
+                <li><a href="#beneficiaries">Beneficiários</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="home" class="hero">
+        <h1>Ajude a reduzir o desperdício de alimentos!</h1>
+        <p>Conecte doadores e beneficiários para acabar com o desperdício.</p>
+        <div class="cta-buttons">
+            <a href="#donors" class="btn">Sou Doador</a>
+            <a href="#beneficiaries" class="btn">Sou Beneficiário</a>
+        </div>
+    </section>
+
+    <!-- Página de Doadores -->
+    <section id="donors" class="donors-section">
+        <h2>Cadastro de Doadores</h2>
+        <form id="donor-form">
+            <label for="donor-name">Nome:</label>
+            <input type="text" id="donor-name" required>
+
+            <label for="donor-type">Tipo de Alimento:</label>
+            <input type="text" id="donor-type" required>
+
+            <label for="donor-quantity">Quantidade:</label>
+            <input type="text" id="donor-quantity" required>
+
+            <label for="donor-location">Localização:</label>
+            <input type="text" id="donor-location" required>
+
+            <label for="donor-date">Data de Retirada:</label>
+            <input type="date" id="donor-date" required>
+
+            <button type="submit">Cadastrar Doação</button>
+        </form>
+    </section>
+
+    <!-- Página de Beneficiários -->
+    <section id="beneficiaries" class="beneficiaries-section">
+        <h2>Cadastro de Beneficiários</h2>
+        <form id="beneficiary-form">
+            <label for="beneficiary-name">Nome:</label>
+            <input type="text" id="beneficiary-name" required>
+
+            <label for="beneficiary-needs">Necessidade de Alimento:</label>
+            <input type="text" id="beneficiary-needs" required>
+
+            <label for="beneficiary-location">Localização:</label>
+            <input type="text" id="beneficiary-location" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="blog-section">
+        <h2>Blog e Dicas</h2>
+        <article>
+            <h3>Como reduzir o desperdício de alimentos?</h3>
+            <p>Leia nossas dicas sobre como aproveitar melhor os alimentos...</p>
+        </article>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact-section">
+        <h2>Contato</h2>
+        <form id="contact-form">
+            <label for="contact-name">Nome:</label>
+            <input type="text" id="contact-name" required>
+
+            <label for="contact-message">Mensagem:</label>
+            <textarea id="contact-message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Plataforma de Doações de Alimentos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
