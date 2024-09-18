@@ -1,0 +1,14 @@
+document.getElementById("donor-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Doação cadastrada com sucesso!");
+});
+
+document.getElementById("beneficiary-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Beneficiário cadastrado com sucesso!");
+});
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Mensagem enviada com sucesso!");
+});
